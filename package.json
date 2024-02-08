@@ -10,7 +10,8 @@
   "access": "public",
   "contributors": [
     "matt",
-    "dgrcode"
+    "dgrcode",
+    "johnphamous"
   ],
   "commands": [
     {
@@ -30,6 +31,13 @@
       "title": "Search Components",
       "description": "Search the Vercel styleguide",
       "mode": "view"
+    },
+    {
+      "name": "recent-preview-deployments",
+      "title": "Search Recent Preview Deployments",
+      "description": "Search for recent preview deployments you are a collaborator on",
+      "mode": "menu-bar",
+      "interval": "10m"
     }
   ],
   "preferences": [
@@ -38,23 +46,25 @@
       "type": "password",
       "required": true,
       "title": "Access Token",
-      "description": "Your Vercel access token",
+      "description": "A \"Full Account\" scope or a specific team",
       "placeholder": "Enter your Access Token",
       "link": "https://vercel.com/account/tokens"
     }
   ],
   "dependencies": {
-    "@raycast/api": "^1.38.1",
-    "@raycast/utils": "^1.4.8",
+    "@raycast/api": "^1.67.1",
+    "@raycast/utils": "^1.12.4",
     "node-fetch": "^3.1.0",
     "swr": "^1.3.0"
   },
   "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.27",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
-    "react-devtools": "^4.19.2",
+    "react-devtools": "^4.28.4",
     "typescript": "^4.4.3"
   },
   "scripts": {
